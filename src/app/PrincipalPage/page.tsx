@@ -21,10 +21,6 @@ export default function PrincipalPage() {
         const novaFrase = frases[Math.floor(Math.random() * frases.length)];
         setFraseAtual(novaFrase);
         setCopiado(false); // reseta estado do botão copiar
-
-        setTimeout(() => {
-            setFraseAtual("Clique novamente e veja uma nova frase.");
-        }, 20000);
     };
 
     const handleCopiarFrase = async () => {
